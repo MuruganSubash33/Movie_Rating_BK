@@ -1,7 +1,7 @@
-const express = require('express');
+ const express = require('express');
 const router = express.Router();
 const Movie = require('../models/movie'); 
-const { getMovies, getMovieDetails, addMovie, deleteMovie, addComment } = require('../Controllers/movieController');
+const { getMovies, getMovieDetails, addMovie, deleteMovie, addComment } = require('../controllers/movieController');
 const { verifyAdmin, verifyToken } = require('../middleware/authMiddleware');
 
 
